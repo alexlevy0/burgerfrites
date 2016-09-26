@@ -1,0 +1,18 @@
+version: '2'
+
+
+services:
+    webapp-volume:
+        build: .
+        volumes:
+            - /dist
+        command: echo 'Webapp volume says "Hello!"'
+    webapp:
+        image: nginx
+        volumes_from:
+            - webapp-volume:ro
+        volumes:
+            - ./config/nginx.conf:/etc/nginx/conf.d/webapp.conf
+        ports:
+            - "80:80"
+#        command: /bin/bash -c "envsubst < /etc/nginx/conf.d/webapp.conf.tpl > /etc/nginx/conf.d/webapp.conf && nginx -g 'daemon off;'"
