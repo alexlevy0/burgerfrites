@@ -19,7 +19,7 @@ var myObject;
 function myFunction(a, b) {
     return a * b;
 }
-myObject = myFunction.call(myObject, 10, 2);// Will return 20
+myObject = myFunction.call(this, 10, 2);// Will return 20
 
 /**
  * Aplly() exemple

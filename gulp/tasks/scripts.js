@@ -25,14 +25,14 @@ function scripts (entry, output, message) {
       .on('error', function (error) {
         gutil.log('Browserify error', error);
         gutil.beep();
-        notify({ title: message, message: 'Error', sound: 'Basso' });
+        //notify({ title: message, message: 'Error', sound: 'Basso' });
         this.end();
       })
       .pipe(source(outputDetails.file))
       .pipe(pkg.debug || false ? gutil.noop() : buffer())
       .pipe(pkg.debug || false ? gutil.noop() : uglify())
-      .pipe(gulp.dest(outputDetails.path))
-      .pipe(notify({ title: message, message: 'Success', sound: 'Morse' }));
+      .pipe(gulp.dest(outputDetails.path));
+      //.pipe(notify({ title: message, message: 'Success', sound: 'Morse' }));
   }
 
   return bundle();

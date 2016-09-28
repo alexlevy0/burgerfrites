@@ -16,3 +16,8 @@ services:
         ports:
             - "80:80"
 #        command: /bin/bash -c "envsubst < /etc/nginx/conf.d/webapp.conf.tpl > /etc/nginx/conf.d/webapp.conf && nginx -g 'daemon off;'"
+#sudo docker run --name docker-nginx -p 80:80 -v ~/docker-nginx/html:/home/alex/burgerfrites -v ~/docker-nginx/default.conf:/home/alex/burgerfrites/config/nginx.conf -d nginx
+
+#sudo docker run --name docker-nginx -p 80:80 -d -v ~/home/alex/burgerfrites:/usr/share/nginx/burgerfrites nginx
+
+#docker run --name NAME -p 8080:8080 -v HOST_PATH:GUEST_PATH -w GUEST_WORKING_DIR -t cannin/nodejs-http-server docker exec -t -i NAME /bin/bash # Executable shell

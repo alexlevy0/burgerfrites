@@ -14,3 +14,8 @@ for (var i = 0, j = files.length; i < j; i++) {
     require('./tasks/' + fileName);
   }
 }
+
+gulp.task(
+    'default',
+    ['build', 'build:3D', 'build:2D']
+);
