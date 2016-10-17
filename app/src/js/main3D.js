@@ -29,13 +29,14 @@ var ballSection = require('./sections/ballSection');
 var flowSection = require('./sections/flowSection');
 var neonsSection = require('./sections/neonsSection');
 var heightSection = require('./sections/heightSection');
-var waveSection = require('./sections/waveSection');
-var faceSection = require('./sections/faceSection');
-var rocksSection = require('./sections/rocksSection');
-var galaxySection = require('./sections/galaxySection');
-var gravitySection = require('./sections/gravitySection');
-var citySection = require('./sections/citySection');
-var endSection = require('./sections/endSection');
+// var waveSection = require('./sections/waveSection');
+// var faceSection = require('./sections/faceSection');
+// var rocksSection = require('./sections/rocksSection');
+// var galaxySection = require('./sections/galaxySection');
+// var gravitySection = require('./sections/gravitySection');
+// var citySection = require('./sections/citySection');
+// var endSection = require('./sections/endSection');
+
 
 jQuery(function () {
   HASH.replacePlaceholders();
@@ -118,7 +119,6 @@ jQuery(function () {
     //citySection,
     //endSection
   ]);
-  console.log("2");
 
   SCENE.on('section:changeBegin', function () {
     var way = this.way;

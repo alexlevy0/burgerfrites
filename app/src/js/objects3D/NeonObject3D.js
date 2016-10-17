@@ -269,7 +269,7 @@ Neon.prototype.getProjection = function () {
  */
 Neon.prototype.getLogo = function () {
   var textGeo = new THREE.PlaneGeometry(50,50);
-  var textTexture = THREE.ImageUtils.loadTexture('./app/public/img/quickText.png');
+  var textTexture = THREE.ImageUtils.loadTexture('./app/public/img/3DlogoBF.png');
   var textMaterial = new THREE.MeshLambertMaterial({
     color: 0x00FFFFFF,
     opacity: 1,

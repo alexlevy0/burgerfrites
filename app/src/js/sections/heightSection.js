@@ -12,20 +12,28 @@ var heightMap = new HeightMap({
   vertical: false,
   plane: false,
   points: false,
-  maps: [
-    { name: 'H', url: './app/public/img/heightMap-H.jpg' },
-    { name: 'A', url: './app/public/img/heightMap-A.jpg' },
+  maps: [ //burger frites
+    { name: 'B', url: './app/public/img/heightMap-B.jpg' },
+    { name: 'U', url: './app/public/img/heightMap-U.jpg' },
     { name: 'R', url: './app/public/img/heightMap-R.jpg' },
+    { name: 'G', url: './app/public/img/heightMap-G.jpg' },
     { name: 'E', url: './app/public/img/heightMap-E.jpg' },
-    { name: 'M', url: './app/public/img/heightMap-M.jpg' }
+    { name: 'R', url: './app/public/img/heightMap-R.jpg' },
+    { name: 'F', url: './app/public/img/heightMap-F.jpg' },
+    { name: 'R', url: './app/public/img/heightMap-R.jpg' },
+    { name: 'I', url: './app/public/img/heightMap-I.jpg' },
+    { name: 'T', url: './app/public/img/heightMap-T.jpg' },
+    { name: 'E', url: './app/public/img/heightMap-E.jpg' },
+    { name: 'S', url: './app/public/img/heightMap-S.jpg' },
   ]
 });
+
 heightMap.el.position.z = -10;
 heightMap.el.rotation.y = -0.6;
 heightSection.add(heightMap.el);
 
 var text = new TextPanel(
-  '          S C R O L L E R  P O U R\n E N T R E R',
+  '          S C R O L L E R  P O U R\n E N  S A V O I R +',
   {
     align: 'right',
     style: '',

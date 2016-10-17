@@ -24,7 +24,7 @@ neonsSection.add(smoke.el);
 var logo = new Neon();
 logo.getLogo();
 neonsSection.add(logo.el);
-logo.el.position.set(0, 0, 10);
+logo.el.position.set(0, 0, -30);
 
 
 /*

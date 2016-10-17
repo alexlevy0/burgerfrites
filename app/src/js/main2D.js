@@ -44,7 +44,7 @@ jQuery(function () {
   imagesLoader.start();
 
   // heads
-  skrollr.init({ skrollrBody: 'mobile-body' });
+  // skrollr.init({ skrollrBody: 'mobile-body' });
 
   // tails
   var wireframe = new Wireframe(jQuery('.wireframe'));

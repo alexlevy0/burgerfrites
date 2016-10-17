@@ -193,7 +193,7 @@ HeightMap.prototype.getLines = function () {
 HeightMap.prototype.getIdleTween = function () {
   var _this = this;
 
-  return TweenLite.to({}, 2, { paused: true,
+  return TweenLite.to({}, 0.5, { paused: true,
       onComplete: function () {
         _this.current++;
 
@@ -203,7 +203,8 @@ HeightMap.prototype.getIdleTween = function () {
 
         _this.applyMap();
 
-        this.duration(random(1.5, 5));
+        // this.duration(random(0.5, 1));
+        this.duration(0.5);
         this.restart();
       }
     });
